@@ -19,14 +19,12 @@
         <script src = "https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
         <script>
-            var button = $("<button id = \"btn\">NON PREMERE</button>")
-            var change = function(){
+            $("body").append($("<button id = \"btn\">NON PREMERE</button>")).on("click", function(){
                 $("#span1").html("CUCU");
                 $("#div1").html("<h1> TI AVEVO DETTO DI NON CLICCARE! </h1>");
                 $("#div1").attr("style", "background-color: rgb(163, 36, 68)");
             }
-            button.on("click", change);
-            $("body").append(button);
+        );
 
            
             
